@@ -1,0 +1,54 @@
+Certainly! Let's structure the information into the three parts you mentioned:
+
+### 1) Background
+
+#### Unit in the Context of Infosys:
+The unit is a vital component within Infosys, specializing in the development and maintenance of the Lex platform. Its primary role is to deliver efficient solutions related to video content processing, translation, and accessibility. The unit contributes to Infosys' larger objective of enhancing user experiences by making multimedia content more accessible and versatile.
+
+#### Project in the Context of the Unit:
+The intern project within the unit focuses on optimizing the workflow of subtitle translation on the Lex platform. By leveraging open-source generative AI models from Hugging Face, the project aims to provide a cost-effective and convenient solution. It aligns with the unit's mission to deliver innovative and resource-efficient services on the Lex platform.
+
+#### Factors Driving the Need for the Intern Project:
+- **Internal Factors:**
+  - The escalating costs associated with third-party subtitle translation services for a large number of employees.
+  - The need for an in-house solution to enhance efficiency and reduce dependency on external services.
+
+- **External Factors:**
+  - The availability of advanced open-source AI models, creating an opportunity to streamline processes.
+
+### 2) Infosys Need
+
+#### Exact Need:
+The exact need is to develop an in-house solution for subtitle translation to address the increasing costs of third-party services. The goal is to optimize the process, make it cost-effective, and ensure seamless functionality within the Lex platform.
+
+#### Fit within the Unit's Operations:
+The project aligns with the unit's mission by introducing an innovative solution to enhance the efficiency of subtitle translation on the Lex platform, contributing to Infosys' larger goal of providing exceptional user experiences.
+
+#### Value to the Unit/Project:
+The intern is expected to bring value by implementing a cost-effective and convenient solution using open-source AI models. The project aims to save significant costs and improve the overall efficiency of the subtitle translation process.
+
+#### Key Stakeholders:
+Key stakeholders include decision-makers overseeing the Lex platform, end-users who rely on subtitle translation, and the development team responsible for the unit.
+
+### 3) Internship Deliverables
+
+#### Tangible Deliverables:
+The tangible deliverables include a Python Flask backend that integrates with the Hugging Face API, a React UI web app for user interaction, and a functional system for extracting audio from video files and translating subtitles.
+
+#### Timelines:
+The internship spans 8 weeks, with the following timeline:
+- Weeks 1-2: Requirement analysis and system design.
+- Weeks 3-5: Implementation of the Flask backend, Hugging Face API integration, and React UI development.
+- Weeks 6-7: Testing, debugging, and refinement.
+- Week 8: Finalizing documentation and presentation.
+
+#### Usage of Deliverables:
+The deliverables will be integrated into the Lex platform to handle the subtitle translation process efficiently, providing a cost-effective solution for Infosys.
+
+#### Support Anchors and Backup Mentor:
+Support anchors within the group will include team members familiar with the Lex platform and its infrastructure. In the absence of the mentor, a designated backup mentor will provide guidance and support.
+
+#### Definition of Successful Completion:
+Successful completion is defined by the deployment of a functional system that effectively extracts audio from video files, integrates with Hugging Face for translation, and provides a user-friendly interface. Performance measures include system reliability, cost savings, and user satisfaction.
+
+This structure should help you present a comprehensive overview of your internship project and its significance within Infosys.
