@@ -1,0 +1,89 @@
+from pytube import YouTube
+import yt_dlp as youtube_dl
+import json
+
+
+def downloadVideo(link):
+    youtubeObject = YouTube(link)
+    youtubeObject = youtubeObject.streams.get_highest_resolution()
+    try:
+        youtubeObject.download()
+    except:
+        print("An error has occurred")
+    print("Download is completed successfully")
+
+
+link = "https://www.youtube.com/watch?v=CAM0XKvQ2_k"
+# DownloadVideo(link)
+
+
+def downloadMusic(videoInfo ,path):
+    try:
+        filename = f"{path}/{videoInfo['title']}.mp3"
+        options={
+            'format':'bestaudio/best',
+            'keepvideo':False,
+            'outtmpl': filename,
+        }
+        print(f"[script] downloading {videoInfo['title']}")
+        print(f"[script] uploaded by {videoInfo['uploader']}")
+
+        with youtube_dl.YoutubeDL(options) as ydl:
+            ydl.download([videoInfo['webpage_url']])
+    except:
+        print("error occured with one video")
+
+
+def prepLink(link, path, complete, failList):
+    video_url = link
+    video_info = youtube_dl.YoutubeDL().extract_info(
+        url = video_url,download=False
+    )
+
+    try:
+        # trying it for a playlist
+        for singleVideoInfo in video_info['entries']:
+            downloadMusic(singleVideoInfo, path)
+    except KeyError:
+        # if the KeyError is raised it will be a  KeyError: 'entries'
+        # it is a single video
+        downloadMusic(video_info, path)
+        failList.append(link)
+    print("download complete")
+    song = {
+        "title": str(video_info['title']),
+        "singer": "",
+        "url":
+            "",
+        "coverUrl":
+            "",
+        "info":
+            str(link),
+        "cover": str(video_info['uploader'])
+    }
+    complete.append(song)
+
+
+
+if __name__ == "__main__":
+    output = "C:/something/something" # example path
+    complete = []
+    failList = []
+    file = open('download.txt', 'r')
+    lines = file.readlines()
+    file.close()
+    for link in lines:
+        prepLink(link, output, complete, failList)
+    print("======= Complete =======")
+    print(complete)
+    print("======= failList =======")
+    print(failList)
+
+
+
+
+
+
+#sudo pip install --upgrade --force-reinstall "git+https://github.com/ytdl-org/youtube-dl.git"
+#python3 -m pip install --force-reinstall https://github.com/yt-dlp/yt-dlp/archive/master.tar.
+#pip install pytube
