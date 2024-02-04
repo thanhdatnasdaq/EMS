@@ -1,1 +1,66 @@
-https://docs.google.com/document/d/e/2PACX-1vSkAD95bC2OZDJK3NWKiXO-RdXSEx5dOiIH7d4q1G7B5iVtXLPHR6tKDTU4F-W0vYCruLIRUkAQ2vZv/pub
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="row">
+                <input type="file" id="fileInput" accept=".mp3, .mp4" onchange="displayFileName()">
+            </div>
+            <div class="row">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="vi">Vietnamese</option>
+                    <option value="fr">French</option>
+                    <!-- Add more language options as needed -->
+                </select>
+            </div>
+            <div class="row">
+                <button onclick="generateText()">Generate</button>
+            </div>
+        </div>
+        <div id="textBoard" class="column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula feugiat sem, at fermentum lacus fermentum vel. Curabitur at libero non arcu ultricies luctus vel nec dui. Integer convallis sapien a velit fermentum euismod. Vivamus dapibus, ipsum at bibendum elementum, libero ex scelerisque tortor, ut consectetur mauris ex vel felis. Suspendisse potenti.</p>
+        </div>
+    </div>
+
+    <script>
+        function displayFileName() {
+            // You can implement this function if you want to display the selected file name
+        }
+
+        function generateText() {
+            // Get file input and selected language
+            const fileInput = document.getElementById("fileInput");
+            const languageSelect = document.getElementById("languageSelect");
+            const file = fileInput.files[0];
+            const language = languageSelect.value;
+
+            // Create FormData object to send the file and language
+            const formData = new FormData();
+            formData.append("file", file);
+            formData.append("language", language);
+
+            // Make a POST request to your Flask server
+            fetch("/api", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response data
+                // Update the textBoard with the generated text
+                const textBoard = document.getElementById("textBoard");
+                textBoard.innerHTML = `<p>${data.rawText[language]}</p>`;
+            })
+            .catch(error => console.error("Error:", error));
+        }
+    </script>
+</body>
+</html>
