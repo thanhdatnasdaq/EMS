@@ -13,9 +13,12 @@ body {
     height: 100vh;
 }
 
+.item {
+    margin-bottom: 20px;
+}
+
 .logo {
     width: 150px; /* Adjust as needed */
-    margin-bottom: 20px;
 }
 
 h1 {
