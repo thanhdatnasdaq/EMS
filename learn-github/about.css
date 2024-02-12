@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text inside container */
+}
+
+.column {
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+#textBoard {
+    /* Adjust width and height */
+    width: 40%;
+    height: 50%;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-sizing: border-box; /* Include border and padding in the width and height */
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 200px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+select {
+    padding: 8px;
+    width: 100%; /* Make the dropdown fill the width of the container */
+}

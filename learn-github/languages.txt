@@ -1,0 +1,8 @@
+en English
+vn Vietnamese
+jp Japanese
+kr Korean
+cn Chinese
+fr French
+gr German
+sp Spanish
