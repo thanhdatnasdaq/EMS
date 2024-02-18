@@ -6,3 +6,5 @@ https://leetcode.com/problems/the-k-strongest-values-in-an-array/description/
 
 
 https://github.com/othneildrew/Best-README-Template
+
+https://pypi.org/project/teachable-machine/
