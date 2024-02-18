@@ -1,89 +1,59 @@
-from pytube import YouTube
-import yt_dlp as youtube_dl
-import json
+<div>Teachable Machine Image Model</div>
+<button type="button" onclick="init()">Start</button>
+<div id="webcam-container"></div>
+<div id="label-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script type="text/javascript">
+    // More API functions here:
+    // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
+    // the link to your model provided by Teachable Machine export panel
+    const URL = "https://teachablemachine.withgoogle.com/models/zIfKf4azG/";
 
-def downloadVideo(link):
-    youtubeObject = YouTube(link)
-    youtubeObject = youtubeObject.streams.get_highest_resolution()
-    try:
-        youtubeObject.download()
-    except:
-        print("An error has occurred")
-    print("Download is completed successfully")
+    let model, webcam, labelContainer, maxPredictions;
 
+    // Load the image model and setup the webcam
+    async function init() {
+        const modelURL = URL + "model.json";
+        const metadataURL = URL + "metadata.json";
 
-link = "https://www.youtube.com/watch?v=CAM0XKvQ2_k"
-# DownloadVideo(link)
+        // load the model and metadata
+        // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+        // or files from your local hard drive
+        // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+        model = await tmImage.load(modelURL, metadataURL);
+        maxPredictions = model.getTotalClasses();
 
+        // Convenience function to setup a webcam
+        const flip = true; // whether to flip the webcam
+        webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+        await webcam.setup(); // request access to the webcam
+        await webcam.play();
+        window.requestAnimationFrame(loop);
 
-def downloadMusic(videoInfo ,path):
-    try:
-        filename = f"{path}/{videoInfo['title']}.mp3"
-        options={
-            'format':'bestaudio/best',
-            'keepvideo':False,
-            'outtmpl': filename,
+        // append elements to the DOM
+        document.getElementById("webcam-container").appendChild(webcam.canvas);
+        labelContainer = document.getElementById("label-container");
+        for (let i = 0; i < maxPredictions; i++) { // and class labels
+            labelContainer.appendChild(document.createElement("div"));
         }
-        print(f"[script] downloading {videoInfo['title']}")
-        print(f"[script] uploaded by {videoInfo['uploader']}")
-
-        with youtube_dl.YoutubeDL(options) as ydl:
-            ydl.download([videoInfo['webpage_url']])
-    except:
-        print("error occured with one video")
-
-
-def prepLink(link, path, complete, failList):
-    video_url = link
-    video_info = youtube_dl.YoutubeDL().extract_info(
-        url = video_url,download=False
-    )
-
-    try:
-        # trying it for a playlist
-        for singleVideoInfo in video_info['entries']:
-            downloadMusic(singleVideoInfo, path)
-    except KeyError:
-        # if the KeyError is raised it will be a  KeyError: 'entries'
-        # it is a single video
-        downloadMusic(video_info, path)
-        failList.append(link)
-    print("download complete")
-    song = {
-        "title": str(video_info['title']),
-        "singer": "",
-        "url":
-            "",
-        "coverUrl":
-            "",
-        "info":
-            str(link),
-        "cover": str(video_info['uploader'])
     }
-    complete.append(song)
 
+    async function loop() {
+        webcam.update(); // update the webcam frame
+        await predict();
+        window.requestAnimationFrame(loop);
+    }
 
-
-if __name__ == "__main__":
-    output = "C:/something/something" # example path
-    complete = []
-    failList = []
-    file = open('download.txt', 'r')
-    lines = file.readlines()
-    file.close()
-    for link in lines:
-        prepLink(link, output, complete, failList)
-    print("======= Complete =======")
-    print(complete)
-    print("======= failList =======")
-    print(failList)
-
-
-
-
-
-
-#sudo pip install --upgrade --force-reinstall "git+https://github.com/ytdl-org/youtube-dl.git"
-#python3 -m pip install --force-reinstall https://github.com/yt-dlp/yt-dlp/archive/master.tar.
-#pip install pytube
+    // run the webcam image through the image model
+    async function predict() {
+        // predict can take in an image, video or canvas html element
+        const prediction = await model.predict(webcam.canvas);
+        for (let i = 0; i < maxPredictions; i++) {
+            const classPrediction =
+                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+            labelContainer.childNodes[i].innerHTML = classPrediction;
+        }
+    }
+</script>
