@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     video.controls = true;
                     video.autoplay = true;
 
-                    // Append the video to the container's parent element
-                    container.parentNode.insertBefore(video, container.nextSibling);
+                    // Append the video to the container
+                    container.appendChild(video);
                 }
             })
             .catch(error => {
