@@ -52,3 +52,15 @@ select {
     padding: 8px;
     width: 100%; /* Make the dropdown fill the width of the container */
 }
+
+.video-container {
+    margin-top: 20px; /* Add space between container and video */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+}
+
+.video-container video {
+    width: 30%; /* Adjust video width as needed */
+    max-width: 50%; /* Ensure video doesn't exceed container width */
+}
+
