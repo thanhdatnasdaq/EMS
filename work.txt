@@ -9,4 +9,14 @@ https://github.com/othneildrew/Best-README-Template
 
 https://pypi.org/project/teachable-machine/
 
+https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/description/     (Hard)
+
+https://leetcode.com/problems/divide-two-integers/description/
+
+https://leetcode.com/problems/string-compression/
+
+https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+
+https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
+
 https://stackoverflow.com/questions/70588185/warning-the-script-pip3-8-is-installed-in-usr-local-bin-which-is-not-on-path
