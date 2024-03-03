@@ -19,4 +19,8 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
 
 https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
 
+https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/description/
+
+https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/description/
+
 https://stackoverflow.com/questions/70588185/warning-the-script-pip3-8-is-installed-in-usr-local-bin-which-is-not-on-path
