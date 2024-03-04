@@ -24,3 +24,6 @@ https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/descri
 https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/description/
 
 https://stackoverflow.com/questions/70588185/warning-the-script-pip3-8-is-installed-in-usr-local-bin-which-is-not-on-path
+
+https://docs.google.com/document/d/1NowyhxrCExBHQfuTnXPugacSCkok01z8E0HqnHjHbmc/edit
+
