@@ -73,7 +73,7 @@ https://leetcode.com/problems/max-consecutive-ones-iii/description/
 https://leetcode.com/problems/reverse-linked-list/description/
 https://leetcode.com/problems/maximum-erasure-value/
 https://leetcode.com/problems/middle-of-the-linked-list/description/
-https://leetcode.com/problems/destination-city/
++ https://leetcode.com/problems/destination-city/
 https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/
 https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/
 https://leetcode.com/problems/removing-stars-from-a-string/
