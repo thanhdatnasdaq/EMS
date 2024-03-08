@@ -22,7 +22,7 @@ https://leetcode.com/problems/sort-characters-by-frequency/
 https://leetcode.com/problems/asteroid-collision/
 https://leetcode.com/problems/shortest-path-with-alternating-colors/
 https://leetcode.com/problems/find-players-with-zero-or-one-losses/description/
-https://leetcode.com/problems/number-of-provinces/
++ https://leetcode.com/problems/number-of-provinces/
 https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/
 https://leetcode.com/problems/backspace-string-compare/
 https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
