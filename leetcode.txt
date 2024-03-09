@@ -66,7 +66,7 @@ https://leetcode.com/problems/find-pivot-index/
 https://leetcode.com/problems/sliding-window-maximum/
 https://leetcode.com/problems/insert-into-a-binary-search-tree/description/
 https://leetcode.com/problems/first-letter-to-appear-twice/
-https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/
+| https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/
 https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/
 https://leetcode.com/problems/ransom-note/
 https://leetcode.com/problems/max-consecutive-ones-iii/description/
@@ -102,18 +102,18 @@ https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination
 https://leetcode.com/problems/count-elements-with-maximum-frequency/
 https://leetcode.com/problems/validate-binary-search-tree/
 https://leetcode.com/problems/equal-row-and-column-pairs/
-https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
++ https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/
 https://leetcode.com/problems/odd-even-linked-list/
 https://leetcode.com/problems/permutation-in-string/
 https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/
 https://leetcode.com/problems/palindrome-linked-list/
-https://leetcode.com/problems/find-lucky-integer-in-an-array/
++ https://leetcode.com/problems/find-lucky-integer-in-an-array/
 https://leetcode.com/problems/number-of-islands/
 https://leetcode.com/problems/find-largest-value-in-each-tree-row/
 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 https://leetcode.com/problems/minimum-absolute-difference-in-bst/
-https://leetcode.com/problems/largest-unique-number/description/
++ https://leetcode.com/problems/largest-unique-number/description/
 https://leetcode.com/problems/running-sum-of-1d-array/description/
 https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
 https://leetcode.com/problems/subarray-product-less-than-k/description/
