@@ -76,7 +76,7 @@ https://leetcode.com/problems/middle-of-the-linked-list/description/
 + https://leetcode.com/problems/destination-city/
 https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/
 https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/
-https://leetcode.com/problems/removing-stars-from-a-string/
++ https://leetcode.com/problems/removing-stars-from-a-string/
 https://leetcode.com/problems/is-subsequence/description/
 https://leetcode.com/problems/number-of-recent-calls/
 https://leetcode.com/problems/find-if-path-exists-in-graph/description/
@@ -93,7 +93,7 @@ https://leetcode.com/problems/two-sum/
 https://leetcode.com/problems/contiguous-array/
 https://leetcode.com/problems/path-crossing/
 https://leetcode.com/problems/subarray-sum-equals-k/
-https://leetcode.com/problems/k-radius-subarray-averages/description/
+- https://leetcode.com/problems/k-radius-subarray-averages/description/
 https://leetcode.com/problems/min-stack/
 https://leetcode.com/problems/shortest-path-in-binary-matrix/
 https://leetcode.com/problems/path-sum/
