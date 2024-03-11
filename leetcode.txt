@@ -28,11 +28,11 @@ https://leetcode.com/problems/backspace-string-compare/
 https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
 https://leetcode.com/problems/get-equal-substrings-within-budget/
 https://leetcode.com/problems/reverse-linked-list-ii/
-https://leetcode.com/problems/validate-stack-sequences/
++ https://leetcode.com/problems/validate-stack-sequences/
 https://leetcode.com/problems/dota2-senate/
 https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/
 https://leetcode.com/problems/unique-number-of-occurrences/
-https://leetcode.com/problems/same-tree/
++ https://leetcode.com/problems/same-tree/
 https://leetcode.com/problems/range-sum-query-immutable/
 https://leetcode.com/problems/reverse-string/description/
 https://leetcode.com/problems/01-matrix/
