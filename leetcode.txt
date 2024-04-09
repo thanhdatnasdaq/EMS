@@ -7,7 +7,7 @@ https://leetcode.com/problems/keys-and-rooms/
 -- https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/submissions/1194649071/
 https://leetcode.com/problems/remove-linked-list-elements/description/
 https://leetcode.com/problems/jewels-and-stones/
-https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/
+- https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/
 https://leetcode.com/problems/reverse-prefix-of-word/
 https://leetcode.com/problems/next-greater-element-i/description/
 https://leetcode.com/problems/find-the-highest-altitude/
