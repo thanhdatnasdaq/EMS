@@ -69,7 +69,7 @@ https://leetcode.com/problems/maximum-depth-of-binary-tree/
 --+ https://leetcode.com/problems/generate-parentheses/description/
 + https://leetcode.com/problems/find-pivot-index/
 https://leetcode.com/problems/sliding-window-maximum/
-https://leetcode.com/problems/insert-into-a-binary-search-tree/description/
++ https://leetcode.com/problems/insert-into-a-binary-search-tree/description/
 https://leetcode.com/problems/first-letter-to-appear-twice/
 | https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/
 https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/
