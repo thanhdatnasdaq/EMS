@@ -108,6 +108,7 @@ https://leetcode.com/problems/shortest-path-in-binary-matrix/
 https://leetcode.com/problems/path-sum/
 https://leetcode.com/problems/remove-linked-list-elements/
 https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/
+- https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 https://leetcode.com/problems/count-elements-with-maximum-frequency/
 - https://leetcode.com/problems/validate-binary-search-tree/
 + https://leetcode.com/problems/bag-of-tokens/description/
