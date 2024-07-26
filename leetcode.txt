@@ -4,7 +4,6 @@ https://leetcode.com/problems/reverse-nodes-in-even-length-groups/
 + https://leetcode.com/problems/contains-duplicate/
 + https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
 https://leetcode.com/problems/keys-and-rooms/
--- https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
 https://leetcode.com/problems/remove-linked-list-elements/description/
 https://leetcode.com/problems/jewels-and-stones/
 - https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/
@@ -84,7 +83,7 @@ https://leetcode.com/problems/maximum-erasure-value/
 https://leetcode.com/problems/middle-of-the-linked-list/description/
 + https://leetcode.com/problems/destination-city/
 https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/
-https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/
+--- https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/
 + https://leetcode.com/problems/removing-stars-from-a-string/
 https://leetcode.com/problems/is-subsequence/description/
 https://leetcode.com/problems/number-of-recent-calls/
